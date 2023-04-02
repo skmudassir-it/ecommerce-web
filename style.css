@@ -365,3 +365,10 @@ body {
     font-weight: 500;
     padding-bottom: 15px;
 }
+
+#sm-banner .banner-box:hover button {
+    background: blueviolet;
+    border: 1px solid blueviolet;
+    color: #000;
+    transition: 0.55s ease-out;
+}
