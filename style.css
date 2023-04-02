@@ -49,11 +49,25 @@ button.normal {
     font-weight: 600;
     padding: 15px 30px;
     color: black;
-    background-color: white;
+    background-color: transparent;
     border-radius: 12px;
     box-shadow: 0 5px 5px #1a1a1a3d;
     cursor: pointer;
     border: none;
+    outline: none;
+    transform: 0.2s;
+}
+
+button.white {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 13px 25px;
+    color: rgb(120, 119, 194);
+    background-color: transparent;
+    border-radius: 12px;
+    box-shadow: 0 5px 5px #1a1a1a3d;
+    cursor: pointer;
+    border: 1px solid #fff;
     outline: none;
     transform: 0.2s;
 }
@@ -313,16 +327,41 @@ body {
     transition: cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 #sm-banner .banner-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-right: 400px;
+    align-items: flex-start;
     background-image: url('img/sm-banner1.jpg');
     min-width: 580px;
-    height: 40vh;
+    height: 50vh;
     background-position: center;
     background-size: cover;
+    padding: 30px;
+}
+
+#sm-banner h4 {
+    color: #ce872b;
+    font-size: 30px;
+    font-weight: strong;
+}
+
+#sm-banner h2 {
+    color: #1f5025;
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+#sm-banner span {
+    color: #1c251a;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 15px;
 }
