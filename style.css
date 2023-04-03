@@ -612,7 +612,8 @@ footer .copyright {
     #feature {
         justify-content: center;
     }
-    #feature .fe-box{
+
+    #feature .fe-box {
         margin: 15px 15px;
     }
 
@@ -621,23 +622,95 @@ footer .copyright {
     }
 
     #product1 .pro {
-       margin: 15px;
+        margin: 15px;
     }
 
     #promotion {
         height: 20vh;
     }
+
     #sm-banner .banner-box {
         min-width: 100%;
         height: 30vh;
     }
+
     #banner3 {
         padding: 0 40px;
     }
+
     #banner3 .banner-box {
         width: 28%;
     }
+
     #newsLetter .form {
         width: 70%;
+    }
+}
+
+@media (max-width: 477px) {
+    .section-p1 {
+        padding: 20px;
+    }
+
+    #header {
+        padding: 10px 30px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    #banner {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+
+    #feature {
+        justify-content: space-between;
+    }
+
+    #feature .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+
+    #product1 .pro {
+        width: 100%;
+    }
+
+    #promotion {
+        height: 40vh;
+    }
+
+    #promotion h4 {
+        font-size: 15px;
+        padding-left: 120px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    #promotion h2 {
+        font-size: 16px;
+        padding-left: 120px;
+    }
+
+    button.normal {
+        padding-left: 30px;
+    }
+
+    #newsLetter .form {
+        width: 100%;
+    }
+
+    #newsLetter button {
+        height: 50px;
+        text-align: center;
+    }
+    footer .copyright {
+        text-align: start;
     }
 }
