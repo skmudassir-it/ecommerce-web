@@ -3,8 +3,16 @@ import { products } from "@/db/schema";
 import { AddToCartButton } from "@/components/AddToCartButton";
 import Image from "next/image";
 
+export const dynamic = 'force-dynamic';
+
 export default async function Home() {
-  const allProducts = await db.select().from(products);
+  let allProducts = [];
+
+  try {
+    allProducts = await db.select().from(products);
+  } catch (error) {
+    console.error('Database error:', error);
+  }
 
   return (
     <main className="min-h-screen bg-gray-50 p-8 font-sans">
